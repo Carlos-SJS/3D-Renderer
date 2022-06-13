@@ -129,10 +129,7 @@ def drawModelFWF(points, faces):
             y2 = points[face[0][(i+1)%len(face[0])]].mat[1][0] + h
             pygame.draw.line(screen, [255,255,255], [x1, y1], [x2, y2])
 
-#loadModel(cubePoints, cubeEdges, cubeFaces, "G:/Mi unidad/Up/Algebra/3D Renderer/square.json")
-#loadModel(pyramidPoints, pyramidEdges, pyramidFaces, "G:/Mi unidad/Up/Algebra/3D Renderer/pyramid.json")
-loadModel(testModelPoints, "G:/Mi unidad/Up\Algebra/3D Renderer/Models/world.json", faces=testModelFaces, loadFaces=True, loadCalculations=True)
-#testModelPoints = tls.rotatePoints(testModelPoints, 70, [True, False, False])
+loadModel(testModelPoints, "/Models/world.json", faces=testModelFaces, loadFaces=True, loadCalculations=True)
 
 while True:
     pygame.display.update()
